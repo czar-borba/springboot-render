@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Cadastro de pratos</title>
+</head>
+<body>
+    <h1>Cadastro de pratos</h1><br>
+    <form action="#" th:action="@{/cadastrar}" method=post th:object="${cliente}">
+    	Nome: <input type="text" th:field="*{nome}"><br><br>
+    	Preço: <input type="text" th:field="*{preco}">
+    	<input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

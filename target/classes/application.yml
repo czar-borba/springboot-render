@@ -1,0 +1,29 @@
+server:
+    port: 5432
+
+spring:
+    datasource:
+        url: jdbc:postgresql://dpg-cpf4ootds78s73965psg-a.oregon-postgres.render.com/postgresql_project_qy1t?user=postgresql_project_qy1t_user&password=oefiprQdkwbu1xYS78DmkIQjUWkZuLMZ
+        driver-class-name: org.postgresql.Driver
+        initialize: true
+
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+            generate-ddl: true
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+
+    sql:
+        init:
+            schema-locations: classpath:schema-postgresql.sql
+            mode: always
+            platform: postgres
+
+logging:
+    level:
+        root: INFO
+        org.springframework: DEBUG
+        org.hibernate: DEBUG
