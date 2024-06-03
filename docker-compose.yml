@@ -7,8 +7,8 @@ services:
       - "8080:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: admin
+      SPRING_DATASOURCE_USERNAME: postgresql_project_qy1t_user
+      SPRING_DATASOURCE_PASSWORD: oefiprQdkwbu1xYS78DmkIQjUWkZuLMZ
     depends_on:
       - db
 
